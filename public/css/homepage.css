@@ -1,0 +1,168 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+img {
+  position: relative;
+  top: 1%;
+  width: 10%;
+  border-radius: 100%;
+  height: 90%;
+  margin: auto;
+}
+
+h5 {
+  width: 100%;
+  color: #ff4301;
+}
+
+.comp {
+  height: 25vh;
+  text-align: center;
+}
+
+.animate {
+  text-align: center;
+  margin: auto;
+}
+
+.tag {
+  visibility: hidden;
+}
+
+.row {
+  position: relative;
+  text-align: center;
+  background-color: #bbe1fa;
+}
+
+.company {
+  font-size: 5rem;
+  font-family: 'Lobster', cursive;
+  color: #00bbf0;
+}
+
+.welcome {
+  color: #3282b8;
+}
+
+.tag {
+  color: #005792;
+}
+
+.col-xl-4 {
+  position: relative;
+  box-shadow: 0px 0px 200px 5px #00bbf0;
+  background-image: linear-gradient(to bottom right, #00bbf0, #d9faff);
+}
+
+.col-xl-4 h1 {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+}
+
+.co {
+  height: 45vh;
+  background-color: #bbe1fa;
+}
+
+.co1 {
+  margin: 5px 0px;
+  height: 30vh;
+  color: #1e56a0;
+}
+
+.co2 {
+  margin: 5px 0;
+  height: 30vh;
+  color: #1e56a0;
+}
+
+.co3 {
+  margin: 5px 0px;
+  height: 30vh;
+  color: #1e56a0;
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0.2;}
+   100% {opacity: 1;}
+}
+
+.co1:hover {
+  background-image: url("/images/homepage/ourproducts.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 33.33vh;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  box-shadow: 0px 0px 200px 100px #00bbf0;
+}
+
+.co1:hover h1{
+  visibility: hidden;
+}
+
+.co1:hover .fas {
+  visibility: hidden;
+}
+
+.co2:hover {
+  background-image: url("/images/homepage/contactus.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 33.33vh;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  box-shadow: 0px 0px 200px 100px #00bbf0;
+}
+
+.co2:hover h1{
+  visibility: hidden;
+}
+
+.co2:hover .fas {
+  visibility: hidden;
+}
+
+.co3:hover {
+  background-image: url("/images/homepage/aboutus.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 33.33vh;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  box-shadow: 0px 0px 200px 100px #00bbf0;
+}
+
+.co3:hover h1{
+  visibility: hidden;
+}
+
+.co3:hover .fas {
+  visibility: hidden;
+}
+
+.fas {
+  position: relative;
+  font-size: 5rem;
+  top: 75px;
+  color: #005792;
+}
+
+@media screen and (max-width: 1200px) {
+  img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px), screen and (max-height: 700px) {
+  img {
+    width: 30%;
+  }
+}

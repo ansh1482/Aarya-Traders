@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Homepage</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/homepage.css">
+  <script src="/welcome.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row comp">
+      <img src="/images/homepage/jaimatadi.jpg">
+      <h5>Jai mata di</h5>
+    </div>
+    <div class="row co">
+      <div class="animate">
+        <h2 class="welcome"></h2>
+        <h1 class="company"></h1>
+        <h3 class="tag">Your one stop for all trading needs.</h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 co1" onclick="$('.product').submit();">
+          <form class="product" action="/product" method="get">
+            <i class="fas fa-shopping-bag"></i>
+            <h1>Our products</h1>
+          </form>
+        </div>
+      <div class="col-xl-4 co2" onclick="$('.contact').submit();">
+        <form class="contact" action="/contact" method="get">
+          <i class="fas fa-phone-alt"></i>
+          <h1>Contact us</h1>
+        </form>
+      </div>
+      <div class="col-xl-4 co3" onclick="$('.about').submit();">
+        <form class="about" action="/about" method="get">
+          <i class="fas fa-address-card"></i>
+          <h1>About us</h1>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/08f96cfcee.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

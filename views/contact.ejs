@@ -1,0 +1,63 @@
+<%- include("header.ejs"); %>
+<title>Contact us</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap" rel="stylesheet">
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <a href="/homepage" class="fas fa-arrow-left"></a>
+  <div class="container">
+        <h1>Contact us</h1>
+        <p class="lead">Business without a communication is incomplete.</p>
+  </div>
+</div>
+<div class="container-fluid">
+  <h3>Phone Number</h3>
+  <h4><a href="tel:8527073459">8527073459</a></h4>
+</div>
+<div class="container-fluid">
+  <h3>Email</h3>
+  <h4><a href="mailto:aaryatraders.biz@gmail.com">aaryatraders.biz@gmail.com</a></h4>
+</div>
+<div class="container-fluid">
+  <h3>IndiaMart</h3>
+  <h4><a href="https://www.indiamart.com/company/70826514/">Aarya Traders</a></h4>
+</div>
+<div class="container-fluid">
+  <h3>Write to us</h3>
+  <form action="/contact" method="post">
+    <div class="row">
+    <div class="col">
+      <label for="firstname">Your first name</label>
+      <input type="text" class="form-control" placeholder="First name" id="firstname" required name="first">
+    </div>
+    <div class="col">
+      <label for="lastname">Your last name</label>
+      <input type="text" class="form-control" placeholder="Last name" id="lastname" aria-describedby="contactHelp" required name="last">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="email">Your email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@xyz.com" name="mailid">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="col">
+      <label for="contact">Your contact number</label>
+      <input type="tel" class="form-control" id="contact" aria-describedby="contactHelp" placeholder="900090000" required name="phone" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+      <small id="contactHelp" class="form-text text-muted">We'll never share your contact details with anyone else.</small>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="text">Your message</label>
+      <textarea class="form-control" id="text" rows="3" placeholder="Write your message here." required name="message"></textarea>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<script src="https://kit.fontawesome.com/08f96cfcee.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
